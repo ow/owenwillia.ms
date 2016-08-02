@@ -1,0 +1,23 @@
+---
+layout: gallery
+title: Photography | Owen Williams
+support: [jquery, gallery]
+---
+
+<article class="post portfolio">
+
+  <div class="col-lg-12">
+     <h2>Photography</h2>
+     <p>Over the years I've taken thousands of photos in the pursuit of getting better at the craft, which I enjoy greatly, but haven't been very good at sharing them. This is my attempt at finally freeing my photos from the archives.</p>
+  </div>
+  {% for item in site.photography %}
+  <div class="col-lg-6">
+    <a href="{{ item.url }}"><h3>{{ item.headline }}</h3></a>
+  </div>
+  {% endfor %}
+</article>
+<script>
+window.onload = function() {
+  //shrink();
+};
+</script>

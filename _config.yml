@@ -27,6 +27,8 @@ gems:
 collections:
   portfolio:
     output: false
+  photography:
+    output: true
 
 # _config.build.yml overwrites these options when you run `gulp build`
 # Enables future posts (posts with dates in the future) and drafts

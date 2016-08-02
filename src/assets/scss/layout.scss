@@ -84,6 +84,35 @@
   float: right;
 }
 
-.body-width {
-  width: 100%;
+.gallery {
+
+  .nav {
+    text-align: center;
+  }
+
+  .menu-left {
+    display: none;
+  }
+
+  .body-width {
+    width: 100%;
+    background: #292f33;
+  }
+
+  h1, h2 {
+    color: white;
+    font-weight: 500;
+  }
+
+  p {
+    color: rgba(255,255,255,0.8);
+  }
+
+  .content {
+    text-align: center;
+  }
+}
+
+.image-gallery {
+  margin-bottom: 50px;
 }

@@ -2,5 +2,11 @@
 layout: photos
 support: [jquery, gallery]
 ---
+{% for post in site.photography %}
+
+<h2>{{post.title}}</h2>
+<div class="location">{{post.location}}</div>
+
+{%endfor%}
 
 {{ content }}
