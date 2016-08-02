@@ -1,0 +1,34 @@
+.post {
+  h3 {
+    color: $blue;
+    margin-bottom: 5px;
+  }
+
+  .job {
+    margin-bottom: 40px;
+  }
+}
+
+.portfolio {
+  h3 {
+    color: $brand;
+  }
+
+  .lead-image {
+    margin-bottom: 25px;
+    transition:.5s;
+    &:hover{
+      opacity: 0.9;
+      transition:.5s;
+    }
+  }
+
+  .byline {
+    font-size: 14px;
+  }
+
+  .item {
+    padding-bottom: 35px;
+  }
+
+}

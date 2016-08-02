@@ -1,0 +1,53 @@
+// Defining values
+$screen-sm-min: 768px;
+$screen-xs-max: ($screen-sm-min - 1);
+$screen-md-min: 992px;
+$screen-sm-max: ($screen-md-min - 1);
+$screen-lg-min: 1200px;
+$screen-md-max: ($screen-lg-min - 1);
+
+// Usage
+@media (max-width: $screen-xs-max) {
+  .age {
+    display: none !important;
+  }
+}
+@media (min-width: $screen-sm-min) {
+
+}
+@media (max-width: $screen-sm-max) {
+  .age {
+    display: none;
+  }
+}
+@media (min-width: $screen-md-min) {
+
+ }
+@media (max-width: $screen-md-max) {
+  .menu-left {
+    position: relative;
+    background: $brand;
+    float: none;
+    color: white;
+    height: auto;
+    width: 100%;
+    flex-direction: inherit;
+    justify-content: inherit;
+  }
+
+  .right-box {
+    width: 100%;
+    float: none;
+  }
+
+  .links {
+    display: none;
+  }
+
+  .lead-contain {
+    margin-top: 25px;
+  }
+}
+@media (min-width: $screen-lg-min) {
+
+}

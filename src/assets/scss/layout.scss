@@ -1,0 +1,89 @@
+.nav {
+  padding-top: 40px;
+  margin-bottom: 60px;
+
+  a {
+    margin-right: 10px;
+    margin-left: 10px;
+    color: #677A95;
+
+    &:hover {
+      color: $brand;
+      border-bottom: 2px solid $brand;
+      text-decoration: none;
+    }
+
+    &:active {
+      color: #CE2900;
+    }
+    &:first-child {
+      margin-left: 0px;
+    }
+  }
+}
+
+.profile {
+  margin-bottom: 20px;
+}
+
+.fullSize {
+  width: 100% !important;
+   transition: all 1.8s;
+}
+
+.age {
+  display: none;
+}
+
+.small {
+  width: 50px !important;
+}
+
+.menu-left {
+    position: fixed;
+    background: $brand;
+    float: left;
+    color: white;
+    height: 100%;
+    width: 45%;
+    flex-direction: row;
+    justify-content: flex-end;
+
+    a {
+      color: $dark;
+      &:hover {
+        color: white;
+        transition:.2s;
+      }
+    }
+
+    .faded {
+      color: $faded;
+      margin-bottom: 80px;
+    }
+
+    .hero {
+      margin-right: 40px;
+      margin: 0 auto;
+
+      .lead-contain {
+        border-left: 7px solid $faded;
+        padding-left: 15px;
+      }
+
+      h1 {
+        font-size: 35px;
+      }
+    }
+
+    @extend .vcenter;
+}
+
+.right-box {
+  width: 55%;
+  float: right;
+}
+
+.body-width {
+  width: 100%;
+}

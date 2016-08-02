@@ -1,0 +1,52 @@
+# Title, decription, tagline and URL for your site
+# Can be used in your theme by calling 'site.title' and so on
+title: Owen Williams | Developer and Writer in Amsterdam
+description: Owen Williams is a freelance developer and writer based in Amsterdam, The Netherlands. He specializes in explaining complex topics for everyone to understand.
+url: http://owenwillia.ms
+
+# Used so Jekyll outputs the site correctly so Gulp can do what it wants
+source: .tmp/jekyll
+destination: .tmp/dist
+exclude: ['assets']
+
+# Same as the title etc for your site but can instead be
+# called by using 'site.author.name' and so on
+# NOTE: Don't use @ in front of your Twitter username
+author:
+  name: Owen Williams
+  email: owen@char.gd
+  uri:
+  bio:
+  twitter: ow
+  github: hyperperforator
+
+gems:
+  - jekyll-seo-tag
+
+#Custom post collections for portfolio
+collections:
+  portfolio:
+    output: false
+
+# _config.build.yml overwrites these options when you run `gulp build`
+# Enables future posts (posts with dates in the future) and drafts
+future: true
+show_drafts: true
+# Disables the more accurate related posts for faster generating of the site
+lsi: false
+# Only make the last 10 posts so generating isn't slow
+limit_posts: 10
+
+# Permalink structure and pagination options
+permalink: pretty
+paginate: 10
+paginate_path: 'page:num'
+excerpt_separator: '<!--more-->'
+
+# Markdown library and options
+markdown: redcarpet
+redcarpet:
+  extensions: ['no_intra_emphasis', 'tables', 'fenced_code_blocks', 'autolink', 'smart',
+              'strikethrough', 'superscript', 'underline', 'highlight', 'footnotes']
+highlighter: true
+

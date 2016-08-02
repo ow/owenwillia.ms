@@ -1,0 +1,30 @@
+picture_path: amsterdam
+preview:
+  filename: bike.jp-2384x1594.jpg
+pictures:
+- filename: bike.jp
+  original: bike.jp-2384x1594.jpg
+  sizes: []
+  thumbnail: bike.jp-2384x1594.jpg
+  wide: true
+- filename: DSCF2836.JP
+  original: DSCF2836.JP-1281x1.JPG
+  sizes: []
+  thumbnail: DSCF2836.JP-1281x1.JPG
+- filename: DSCF2833.JP
+  original: DSCF2833.JP-1281x1.JPG
+  sizes: []
+  thumbnail: DSCF2833.JP-1281x1.JPG
+- filename: DSCF2834.JP
+  original: DSCF2834.JP-1281x1.JPG
+  sizes: []
+  thumbnail: DSCF2834.JP-1281x1.JPG
+  wide: true
+- filename: DSCF2833
+  original: DSCF2833-1281x1.JPG
+  sizes: []
+  thumbnail: DSCF2833-1281x1.JPG
+- filename: DSCF2835.JP
+  original: DSCF2835.JP-1281x1.JPG
+  sizes: []
+  thumbnail: DSCF2835.JP-1281x1.JPG

@@ -1,0 +1,23 @@
+---
+layout: default
+title: Portfolio | Owen Williams | Developer and Writer in Amsterdam
+---
+
+<article class="post portfolio">
+
+  <div class="col-lg-12">
+      {% for item in site.portfolio %}
+        <div class="item">
+          <a href="{{item.link}}">
+            <img class="lead-image" src="{{item.image}}">
+          </a>
+          <a href="{{item.link}}"><h3>{{ item.headline }}</h3></a>
+          <p class="byline">{{item.site}} – {{item.when}}</p>
+          <p>{{item.excerpt}}</p>
+        </div>
+      {% endfor %}
+  </div>
+
+
+</article>
+
