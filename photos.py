@@ -7,12 +7,12 @@ __author_email__ = 'me@olivierpieters.be'
 
 import yaml, imagesize
 from os import listdir, rename
-from os.path import isfile, join
+from os.path import isfile, join, splitext, basename
 
 # configuration
-output_file = "amsterdam.yml"
+output_file = "prague.yml"
 input_file = output_file
-image_path = "amsterdam"
+image_path = "prague"
 extensions= ['jpg', 'png'] # only small caps!
 
 # merge with global image gallery locat
@@ -28,7 +28,9 @@ print('Renaming files...')
 new_files = []
 for f in files:
     if f[f.rfind('-')+1:f.rfind('.')] != 'thumbnail':
-        newf = f[:f.rfind('-')] + "-%sx%s" % imagesize.get(join(path, f)) + f[f.rfind('.'):]
+        g = splitext(f)[0]
+        newf = f + "-%sx%s" % imagesize.get(join(path, f)) + f[f.rfind('.'):]
+        print(f + ' ' + newf)
         rename(join(path, f),join(path, newf))
     else:
         newf = f
@@ -44,7 +46,7 @@ thumbs = {}
 print('Grouping files...')
 for f in files:
     filename = f[:f.rfind('-')]
-    if f[f.rfind('-')+1:f.rfind('.')] == "thumbnail":
+    if f[f.rfind('-')+1:f.rfind('.')] == "thumb":
         thumbs[filename] = f
     else:
         if filename in new_gallery:
