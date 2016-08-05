@@ -17,3 +17,95 @@
   fill: currentColor;
   margin-right: 5px;
 }
+
+.gallery {
+  img {
+    width: 100%;
+  }
+
+  .nav {
+    text-align: center;
+  }
+
+  .menu-left {
+    display: none;
+  }
+
+  .body-width {
+    width: 100%;
+    background: #292f33;
+  }
+
+  h1, h2 {
+    color: white;
+    font-weight: 500;
+  }
+
+  p {
+    color: rgba(255,255,255,0.8);
+  }
+
+  .content {
+    text-align: center;
+  }
+}
+
+.image-gallery {
+  margin-bottom: 50px;
+}
+
+$default-width: 50%;
+
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* force scrollbar, prevents initial gap */
+html {
+  overflow-y: scroll;
+}
+
+#gallery-sizer {
+  width: 1px;
+}
+
+.grid-item {
+  width: 50%;
+}
+
+.grid-item--width33 {
+    width: 33.3333333333% !important;
+}
+
+.grid-item--width2 {
+    width: 100%;
+}
+
+.image-gallery {
+  display: block;
+
+  .image-wrapper {
+    float: left;
+    padding: 3px;
+
+    // hack required if no padding
+    .image {
+      width: 100.1%;
+      width: calc( 100% + 1px );
+      height: 100%;
+    }
+  }
+
+  &:after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+}
+
+.caption {
+  position: static;
+  color: #AAA;
+}

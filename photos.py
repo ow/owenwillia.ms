@@ -7,21 +7,13 @@ __author_email__ = 'me@olivierpieters.be'
 
 import yaml, imagesize
 from os import listdir, rename
-<<<<<<< HEAD
 from os.path import isfile, join, splitext, basename
 
 # configuration
 output_file = "prague.yml"
 input_file = output_file
 image_path = "prague"
-=======
-from os.path import isfile, join
 
-# configuration
-output_file = "amsterdam.yml"
-input_file = output_file
-image_path = "amsterdam"
->>>>>>> b1093619ab345f34f6e11e8da3a806847c34e013
 extensions= ['jpg', 'png'] # only small caps!
 
 # merge with global image gallery locat
@@ -37,6 +29,7 @@ print('Renaming files...')
 new_files = []
 for f in files:
     if f[f.rfind('-')+1:f.rfind('.')] != 'thumbnail':
+        # Something breaks in this step
         newf = f[:f.rfind('-')] + "-%sx%s" % imagesize.get(join(path, f)) + f[f.rfind('.'):]
 
         rename(join(path, f),join(path, newf))

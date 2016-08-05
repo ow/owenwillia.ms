@@ -1,37 +1,26 @@
 picture_path: prague
 pictures:
-- filename: prague015
-  original: prague015-2000x1334.jpg
-  sizes:
-  - prague015-1000x667.jpg
-  thumbnail: prague015-1000x667.jpg
 - filename: prague014
   original: prague014-2000x1334.jpg
+  three: true
   sizes:
   - prague014-1000x667.jpg
   thumbnail: prague014-1000x667.jpg
 - filename: prague012
   original: prague012-2000x1334.jpg
+  three: true
   sizes:
   - prague012-1000x667.jpg
   thumbnail: prague012-1000x667.jpg
 - filename: prague011
   original: prague011-2000x1334.jpg
+  three: true
   sizes:
   - prague011-1000x667.jpg
   thumbnail: prague011-1000x667.jpg
-- filename: prague010
-  original: prague010-2000x1334.jpg
-  sizes:
-  - prague010-1000x667.jpg
-  thumbnail: prague010-1000x667.jpg
-- filename: prague016
-  original: prague016-2000x1334.jpg
-  sizes:
-  - prague016-1000x667.jpg
-  thumbnail: prague016-1000x667.jpg
 - filename: prague009
   original: prague009-2000x1334.jpg
+  wide: true
   sizes:
   - prague009-1000x667.jpg
   thumbnail: prague009-1000x667.jpg
@@ -45,16 +34,17 @@ pictures:
   sizes:
   - prague017-1000x667.jpg
   thumbnail: prague017-1000x667.jpg
+- filename: prague004
+  original: prague004-2000x1334.jpg
+  wide: true
+  sizes:
+  - prague004-1000x667.jpg
+  thumbnail: prague004-1000x667.jpg
 - filename: prague005
   original: prague005-2000x1334.jpg
   sizes:
   - prague005-1000x667.jpg
   thumbnail: prague005-1000x667.jpg
-- filename: prague004
-  original: prague004-2000x1334.jpg
-  sizes:
-  - prague004-1000x667.jpg
-  thumbnail: prague004-1000x667.jpg
 - filename: prague007
   original: prague007-2000x1334.jpg
   sizes:
@@ -85,3 +75,8 @@ pictures:
   sizes:
   - prague002-1000x667.jpg
   thumbnail: prague002-1000x667.jpg
+- filename: prague015
+  original: prague015-2000x1334.jpg
+  sizes:
+  - prague015-1000x667.jpg
+  thumbnail: prague015-1000x667.jpg
