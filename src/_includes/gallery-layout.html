@@ -1,21 +1,3 @@
-</div>
-</div>
-</div>
-<div class="container-fluid photo-gallery">
-<div class="col-lg-12">
-<div id="image-gallery{% if include.id_number %}-{{ include.id_number }}{% endif %}" class="image-gallery">
-  <div id="gallery-sizer{% if include.id_number %}-{{ include.id_number }}{% endif %}" class="gallery-sizer"></div>
-  {% for picture in include.gallery.pictures %}
-  <div class="image-wrapper {% if picture.wide == true %}grid-item--width2{% elsif picture.three == true %}grid-item--width33{% else %}grid-item{%endif%}">
-    <a href="{{ site.baseurl }}/photos/{{ include.gallery.picture_path }}/{{ picture.original }}"
-    data-responsive="{% for size in picture.sizes %} {{ site.baseurl }}/photos/{{ include.gallery.picture_path }}/{{ size }} {{ size | split: '-' | last | split: '.' | first | split: 'x' | first | strip }}{% unless forloop.last %},{% endunless %}{% endfor %}" class="image" {% if picture.title %} data-sub-html="<div class='lg-toolbar caption'><h4>{{ picture.title | escape }}</h4>{% if picture.caption %}<p>{{ picture.caption | escape }}</p>{% endif %}</div>"{% endif %}>
-      <img alt="{{ picture.title }}" src="{{ site.baseurl }}/photos/{{ include.gallery.picture_path }}/{{ picture.thumbnail }}" />
-    </a>
-  </div>
-  {% endfor %}
-</div>
-</div>
-</div>
 <script>
 $(document).ready(function() {
  var $gallery{% if include.id_number %}{{ include.id_number }}{% endif %} = $("#image-gallery{% if include.id_number %}-{{ include.id_number }}{% endif %}").lightGallery({
@@ -37,3 +19,18 @@ $grid{% if include.id_number %}{{ include.id_number }}{% endif %}.imagesLoaded()
 
 });
 </script>
+</div>
+</div>
+</div>
+<div class="container-fluid photo-gallery">
+<div id="image-gallery{% if include.id_number %}-{{ include.id_number }}{% endif %}" class="image-gallery">
+  <div id="gallery-sizer{% if include.id_number %}-{{ include.id_number }}{% endif %}" class="gallery-sizer"></div>
+  {% for picture in include.gallery.pictures %}
+  <div class="image-wrapper {% if picture.wide == true %}grid-item--width2{% elsif picture.three == true %}grid-item--width33{% else %}grid-item{%endif%}">
+    <a href="{{ site.baseurl }}/photos/{{ include.gallery.picture_path }}/{{ picture.original }}"
+    data-responsive="{% for size in picture.sizes %} {{ site.baseurl }}/photos/{{ include.gallery.picture_path }}/{{ size }} {{ size | split: '-' | last | split: '.' | first | split: 'x' | first | strip }}{% unless forloop.last %},{% endunless %}{% endfor %}" class="image" {% if picture.title %} data-sub-html="<div class='lg-toolbar caption'><h4>{{ picture.title | escape }}</h4>{% if picture.caption %}<p>{{ picture.caption | escape }}</p>{% endif %}</div>"{% endif %}>
+      <img alt="{{ picture.title }}" src="{{ site.baseurl }}/photos/{{ include.gallery.picture_path }}/{{ picture.thumbnail }}" />
+    </a>
+  </div>
+  {% endfor %}
+</div>
