@@ -1,18 +1,36 @@
 ---
-layout: gallery
+layout: photos
 title: Photography | Owen Williams
 support: [jquery, gallery]
 ---
 
 <article class="post portfolio">
 
-  <div class="col-lg-12">
+  <div class="col-lg-8 col-lg-offset-2">
      <h2>Photography</h2>
-     <p>Over the years I've taken thousands of photos in the pursuit of getting better at the craft, which I enjoy greatly, but haven't been very good at sharing them. This is my attempt at finally freeing my photos from the archives.</p>
+     <p>Over the years I've taken thousands of photos in the pursuit of getting better at the craft, which I enjoy greatly, but haven't been very good at sharing them. This is my attempt at finally freeing my photos from my hard drives and putting them online for others to see.</p>
   </div>
+
   {% for item in site.photography %}
-  <div class="col-lg-6">
-    <a href="{{ item.url }}"><h3>{{ item.headline }}</h3></a>
+  <div class="col-lg-6 photo-element">
+    <a href="{{ item.url }}">
+    <div class="featured-box" style="background-image: url('{{item.featured}}')">
+      <div class="tint">
+        <div class="meta">
+          <h3>{{ item.title }}</h3>
+           <svg style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <defs>
+            <symbol id="icon-location" viewBox="0 0 32 32">
+            <title>location</title>
+            <path class="path1" d="M16 0c-5.523 0-10 4.477-10 10 0 10 10 22 10 22s10-12 10-22c0-5.523-4.477-10-10-10zM16 16c-3.314 0-6-2.686-6-6s2.686-6 6-6 6 2.686 6 6-2.686 6-6 6z"></path>
+            </symbol>
+            </defs>
+            </svg>
+            <div class="location"><svg class="icon icon-location"><use xlink:href="#icon-location"></use></svg><span class="mls"></span><span>{{item.location}}</span></div>
+        </div>
+      </div>
+    </div>
+    </a>
   </div>
   {% endfor %}
 </article>
