@@ -118,35 +118,31 @@ html {
   overflow-y: scroll;
 }
 
-#gallery-sizer {
-  width: 33.3333333333%;
+.grid-item,
+.grid-sizer, .gallery-sizer {
+  width: 33.33%;
 }
 
 .grid-item {
-  width: 50%;
+  float: left;
 }
 
-.grid-item--width33 {
-    width: 33.3333333333% !important;
+.photoset-cell {
+    height: 100%;
+    img {
+      height: 100%;
+    }
 }
 
-.grid-item--width2 {
-    width: 100%;
+.photoset-row {
+      margin-top: 7px;
 }
-
 .image-gallery {
   display: block;
 
   .image-wrapper {
     float: left;
-    padding: 4px;
 
-    // hack required if no padding
-    .image {
-      width: 100.1%;
-      width: calc( 100% + 1px );
-      height: 100%;
-    }
   }
 
   &:after {

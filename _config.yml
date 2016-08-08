@@ -2,7 +2,7 @@
 # Can be used in your theme by calling 'site.title' and so on
 title: Owen Williams | Developer and Writer in Amsterdam
 description: Owen Williams is a freelance developer and writer based in Amsterdam, The Netherlands. He specializes in explaining complex topics for everyone to understand.
-url: http://owenwillia.ms
+url: http://localhost:3000
 
 # Used so Jekyll outputs the site correctly so Gulp can do what it wants
 source: .tmp/jekyll
@@ -41,8 +41,6 @@ limit_posts: 10
 
 # Permalink structure and pagination options
 permalink: pretty
-paginate: 10
-paginate_path: 'page:num'
 excerpt_separator: '<!--more-->'
 
 # Markdown library and options

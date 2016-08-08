@@ -4,27 +4,17 @@ $(document).ready(function() {
     thumbnail: false,
     selector: '.image'
   });
-  // init isotope
-var $grid{% if include.id_number %}{{ include.id_number }}{% endif %} = $('#image-gallery{% if include.id_number %}-{{ include.id_number }}{% endif %}').isotope({
-  percentPosition: true,
-  columnWidth: '#gallery-sizer{% if include.id_number %}-{{ include.id_number }}{% endif %}',
-  itemSelector: '.image-wrapper',
-  layoutMode: "masonry"
-});
 
-// layout Isotope after each image loads
-$grid{% if include.id_number %}{{ include.id_number }}{% endif %}.imagesLoaded().progress( function() {
-  $grid{% if include.id_number %}{{ include.id_number }}{% endif %}.masonry();
-});
-
+ $('#image-gallery{% if include.id_number %}-{{ include.id_number }}{% endif %}').photosetGrid({
+    gutter: '7px',
+    highresLinks: true,
+ });
 });
 </script>
 </div>
 </div>
 </div>
-<div class="container-fluid photo-gallery">
-<div id="image-gallery{% if include.id_number %}-{{ include.id_number }}{% endif %}" class="image-gallery"><div id="gallery-sizer{% if include.id_number %}-{{ include.id_number }}{% endif %}" class="gallery-sizer"></div>{% for picture in include.gallery.pictures %}<div class="image-wrapper {% if picture.wide == true %}grid-item--width2{% elsif picture.three == true %}grid-item--width33{% else %}grid-item{%endif%}"><a href="{{ site.baseurl }}/photos/{{ include.gallery.picture_path }}/{{ picture.original }}" data-responsive="{% for size in picture.sizes %} {{ site.baseurl }}/photos/{{ include.gallery.picture_path }}/{{ size }} {{ size | split: '-' | last | split: '.' | first | split: 'x' | first | strip }}{% unless forloop.last %},{% endunless %}{% endfor %}" class="image" {% if picture.title %} data-sub-html="<div class='lg-toolbar caption'><h4>{{ picture.title | escape }}</h4>{% if picture.caption %}<p>{{ picture.caption | escape }}</p>{% endif %}</div>"{% endif %}><img alt="{{ picture.title }}" src="{{ site.baseurl }}/photos/{{ include.gallery.picture_path }}/{{ picture.thumbnail }}" /></a>
-</div>
-{% endfor %}
+<div class="photo-gallery">
+<div data-layout="{{include.gallery.layout}}" id="image-gallery{% if include.id_number %}-{{ include.id_number }}{% endif %}" class="image-gallery">{% for picture in include.gallery.pictures %}<a href="{{ site.baseurl }}/photos/{{ include.gallery.picture_path }}/{{ picture.original }}" data-responsive="{% for size in picture.sizes %} {{ site.baseurl }}/photos/{{ include.gallery.picture_path }}/{{ size }} {{ size | split: '-' | last | split: '.' | first | split: 'x' | first | strip }}{% unless forloop.last %},{% endunless %}{% endfor %}" class="image" {% if picture.title %} data-sub-html="<div class='lg-toolbar caption'><h4>{{ picture.title | escape }}</h4>{% if picture.caption %}<p>{{ picture.caption | escape }}</p>{% endif %}</div>"{% endif %}><img alt="{{ picture.title }}" src="{{ site.baseurl }}/photos/{{ include.gallery.picture_path }}/{{ picture.thumbnail }}" data-highres="{{ site.baseurl }}/photos/{{ include.gallery.picture_path }}/{{ picture.original }}"/></a>{% endfor %}
 </div>
 </div>
