@@ -18,5 +18,15 @@ support: [jquery, gallery]
     <div class="location"><svg class="icon icon-location"><use xlink:href="#icon-location"></use></svg><span class="mls"></span><span>{{page.location}}</span>
     </div>
   </div>
-
+  <script>
+  $(document).ready(function() {
+ var $gallery = $(".image-gallery").lightGallery({
+    mode: 'lg-fade',
+    thumbnail: false,
+    selector: '.image',
+    download: false,
+    zoom: false
+  });
+  });
+</script>
 {{ content }}
