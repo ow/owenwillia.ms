@@ -1,0 +1,39 @@
+picture_path: annecy
+layout: 1212
+pictures:
+- filename: france004
+  original: france004-2200x1467.jpg
+  sizes:
+  - france004-1200x800.jpg
+  - france004-600x400.jpg
+  thumbnail: france004-600x400.jpg
+- filename: france006
+  original: france006-1467x2200.jpg
+  sizes:
+  - france006-400x600.jpg
+  - france006-800x1200.jpg
+  thumbnail: france006-800x1200.jpg
+- filename: france003
+  original: france003-1467x2200.jpg
+  sizes:
+  - france003-400x600.jpg
+  - france003-800x1200.jpg
+  thumbnail: france003-800x1200.jpg
+- filename: france008
+  original: france008-2200x1467.jpg
+  sizes:
+  - france008-1200x800.jpg
+  - france008-600x400.jpg
+  thumbnail: france008-600x400.jpg
+- filename: france010
+  original: france010-2200x1467.jpg
+  sizes:
+  - france010-1200x800.jpg
+  - france010-600x400.jpg
+  thumbnail: france010-600x400.jpg
+- filename: france011
+  original: france011-2200x1467.jpg
+  sizes:
+  - france011-1200x800.jpg
+  - france011-600x400.jpg
+  thumbnail: france011-600x400.jpg

@@ -1,0 +1,21 @@
+picture_path: annecy
+layout: 12
+pictures:
+- filename: france007
+  original: france007-2200x1467.jpg
+  sizes:
+  - france007-1200x800.jpg
+  - france007-600x400.jpg
+  thumbnail: france007-600x400.jpg
+- filename: france001
+  original: france001-2200x1467.jpg
+  sizes:
+  - france001-1200x800.jpg
+  - france001-600x400.jpg
+  thumbnail: france001-600x400.jpg
+- filename: france002
+  original: france002-2145x2200.jpg
+  sizes:
+  - france002-1170x1200.jpg
+  - france002-585x600.jpg
+  thumbnail: france002-585x600.jpg

@@ -10,9 +10,9 @@ from os import listdir, rename
 from os.path import isfile, join, splitext, basename
 
 # configuration
-output_file = "prague.yml"
+output_file = "annecy.yml"
 input_file = output_file
-image_path = "prague"
+image_path = "annecy"
 
 extensions= ['jpg', 'png'] # only small caps!
 

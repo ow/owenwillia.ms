@@ -19,6 +19,10 @@ $screen-md-max: ($screen-lg-min - 1);
   .age {
     display: none;
   }
+
+  .photo-gallery {
+    margin: 0;
+  }
 }
 @media (min-width: $screen-md-min) {
 

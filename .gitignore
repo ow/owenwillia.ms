@@ -68,3 +68,4 @@ dist
 aws-credentials.json
 rsync-credentials.json
 gulpfile.js
+src/photos/

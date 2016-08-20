@@ -12,9 +12,9 @@ support: [jquery, gallery]
   </div>
 
   {% for item in site.photography %}
-  <div class="col-lg-6 photo-element">
+  <div class="col-lg-8 col-lg-offset-2 photo-element">
     <a href="{{ item.url }}">
-    <div class="featured-box" style="background-image: url('{{item.featured}}')">
+    <div class="featured-box" style="background-image: url('{{item.image}}')">
       <div class="tint">
         <div class="meta">
           <h3>{{ item.title }}</h3>

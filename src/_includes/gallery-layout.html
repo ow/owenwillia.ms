@@ -8,13 +8,23 @@ $(document).ready(function() {
  $('#image-gallery{% if include.id_number %}-{{ include.id_number }}{% endif %}').photosetGrid({
     gutter: '7px',
     highresLinks: true,
+
+    onInit: function(){},
+    onComplete: function(){
+      // Show the grid after it renders
+      $('.photo-gallery').attr('style', '');
+    }
  });
 });
 </script>
 </div>
 </div>
 </div>
-<div class="photo-gallery">
+<div class="container-fluid photo-gallery" style="opacity: 0;">
 <div data-layout="{{include.gallery.layout}}" id="image-gallery{% if include.id_number %}-{{ include.id_number }}{% endif %}" class="image-gallery">{% for picture in include.gallery.pictures %}<a href="{{ site.baseurl }}/photos/{{ include.gallery.picture_path }}/{{ picture.original }}" data-responsive="{% for size in picture.sizes %} {{ site.baseurl }}/photos/{{ include.gallery.picture_path }}/{{ size }} {{ size | split: '-' | last | split: '.' | first | split: 'x' | first | strip }}{% unless forloop.last %},{% endunless %}{% endfor %}" class="image" {% if picture.title %} data-sub-html="<div class='lg-toolbar caption'><h4>{{ picture.title | escape }}</h4>{% if picture.caption %}<p>{{ picture.caption | escape }}</p>{% endif %}</div>"{% endif %}><img alt="{{ picture.title }}" src="{{ site.baseurl }}/photos/{{ include.gallery.picture_path }}/{{ picture.thumbnail }}" data-highres="{{ site.baseurl }}/photos/{{ include.gallery.picture_path }}/{{ picture.original }}"/></a>{% endfor %}
 </div>
 </div>
+<div class="body-width">
+  <div class="container">
+    <div class="content">
+      <div class="col-lg-8 col-lg-offset-2">

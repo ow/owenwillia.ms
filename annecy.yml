@@ -1,0 +1,193 @@
+picture_path: annecy
+pictures:
+- filename: france020
+  original: france020-2200x1467.jpg
+  sizes:
+  - france020-1200x800.jpg
+  - france020-600x400.jpg
+  thumbnail: france020-600x400.jpg
+- filename: france021
+  original: france021-2200x1467.jpg
+  sizes:
+  - france021-1200x800.jpg
+  - france021-600x400.jpg
+  thumbnail: france021-600x400.jpg
+- filename: france008
+  original: france008-2200x1467.jpg
+  sizes:
+  - france008-1200x800.jpg
+  - france008-600x400.jpg
+  thumbnail: france008-600x400.jpg
+- filename: france009
+  original: france009-2200x1467.jpg
+  sizes:
+  - france009-1200x800.jpg
+  - france009-600x400.jpg
+  thumbnail: france009-600x400.jpg
+- filename: france024
+  original: france024-2200x1467.jpg
+  sizes:
+  - france024-1200x800.jpg
+  - france024-600x400.jpg
+  thumbnail: france024-600x400.jpg
+- filename: france025
+  original: france025-2200x1467.jpg
+  sizes:
+  - france025-1200x800.jpg
+  - france025-600x400.jpg
+  thumbnail: france025-600x400.jpg
+- filename: france022
+  original: france022-2200x1467.jpg
+  sizes:
+  - france022-1200x800.jpg
+  - france022-600x400.jpg
+  thumbnail: france022-600x400.jpg
+- filename: france027
+  original: france027-2200x1467.jpg
+  sizes:
+  - france027-1200x800.jpg
+  - france027-600x400.jpg
+  thumbnail: france027-600x400.jpg
+- filename: france002
+  original: france002-2145x2200.jpg
+  sizes:
+  - france002-1170x1200.jpg
+  - france002-585x600.jpg
+  thumbnail: france002-585x600.jpg
+- filename: france003
+  original: france003-1467x2200.jpg
+  sizes:
+  - france003-400x600.jpg
+  - france003-800x1200.jpg
+  thumbnail: france003-800x1200.jpg
+- filename: france001
+  original: france001-2200x1467.jpg
+  sizes:
+  - france001-1200x800.jpg
+  - france001-600x400.jpg
+  thumbnail: france001-600x400.jpg
+- filename: france006
+  original: france006-1467x2200.jpg
+  sizes:
+  - france006-400x600.jpg
+  - france006-800x1200.jpg
+  thumbnail: france006-800x1200.jpg
+- filename: france007
+  original: france007-2200x1467.jpg
+  sizes:
+  - france007-1200x800.jpg
+  - france007-600x400.jpg
+  thumbnail: france007-600x400.jpg
+- filename: france004
+  original: france004-2200x1467.jpg
+  sizes:
+  - france004-1200x800.jpg
+  - france004-600x400.jpg
+  thumbnail: france004-600x400.jpg
+- filename: france005
+  original: france005-2200x1467.jpg
+  sizes:
+  - france005-1200x800.jpg
+  - france005-600x400.jpg
+  thumbnail: france005-600x400.jpg
+- filename: france023
+  original: france023-2200x1467.jpg
+  sizes:
+  - france023-1200x800.jpg
+  - france023-600x400.jpg
+  thumbnail: france023-600x400.jpg
+- filename: france026
+  original: france026-2200x1467.jpg
+  sizes:
+  - france026-1200x800.jpg
+  - france026-600x400.jpg
+  thumbnail: france026-600x400.jpg
+- filename: france028
+  original: france028-2200x1467.jpg
+  sizes:
+  - france028-1200x800.jpg
+  - france028-600x400.jpg
+  thumbnail: france028-600x400.jpg
+- filename: france029
+  original: france029-2200x1467.jpg
+  sizes:
+  - france029-1200x800.jpg
+  - france029-600x400.jpg
+  thumbnail: france029-600x400.jpg
+- filename: france019
+  original: france019-2200x1467.jpg
+  sizes:
+  - france019-1200x800.jpg
+  - france019-600x400.jpg
+  thumbnail: france019-600x400.jpg
+- filename: france018
+  original: france018-2200x1467.jpg
+  sizes:
+  - france018-1200x800.jpg
+  - france018-600x400.jpg
+  thumbnail: france018-600x400.jpg
+- filename: france011
+  original: france011-2200x1467.jpg
+  sizes:
+  - france011-1200x800.jpg
+  - france011-600x400.jpg
+  thumbnail: france011-600x400.jpg
+- filename: france010
+  original: france010-2200x1467.jpg
+  sizes:
+  - france010-1200x800.jpg
+  - france010-600x400.jpg
+  thumbnail: france010-600x400.jpg
+- filename: france013
+  original: france013-2200x1467.jpg
+  sizes:
+  - france013-1200x800.jpg
+  - france013-600x400.jpg
+  thumbnail: france013-600x400.jpg
+- filename: france012
+  original: france012-2200x1467.jpg
+  sizes:
+  - france012-1200x800.jpg
+  - france012-600x400.jpg
+  thumbnail: france012-600x400.jpg
+- filename: france015
+  original: france015-2200x1467.jpg
+  sizes:
+  - france015-1200x800.jpg
+  - france015-600x400.jpg
+  thumbnail: france015-600x400.jpg
+- filename: france014
+  original: france014-2200x1467.jpg
+  sizes:
+  - france014-1200x800.jpg
+  - france014-600x400.jpg
+  thumbnail: france014-600x400.jpg
+- filename: france017
+  original: france017-2200x1467.jpg
+  sizes:
+  - france017-1200x800.jpg
+  - france017-600x400.jpg
+  thumbnail: france017-600x400.jpg
+- filename: france016
+  original: france016-2200x1467.jpg
+  sizes:
+  - france016-1200x800.jpg
+  - france016-600x400.jpg
+  thumbnail: france016-600x400.jpg
+- filename: france031
+  original: france031-2200x1467.jpg
+  sizes:
+  - france031-1200x800.jpg
+  - france031-600x400.jpg
+  thumbnail: france031-600x400.jpg
+- filename: france-032
+  original: france-032-3024x4032.jpg
+  sizes:
+  - france-032-600x800.jpg
+  thumbnail: france-032-600x800.jpg
+- filename: france030
+  original: france030-2200x1467.jpg
+  sizes:
+  - france030-1200x800.jpg
+  - france030-600x400.jpg
+  thumbnail: france030-600x400.jpg

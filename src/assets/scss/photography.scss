@@ -1,3 +1,8 @@
+.gallery {
+  background: #292f33;
+  position: relative;
+}
+
 .location {
   background: #677A95;
   color: white;
@@ -59,8 +64,9 @@
 }
 
 .photo-gallery {
-  margin-left: 60px;
-  margin-right: 60px;
+  margin-left: 100px;
+  margin-right: 100px;
+  transition:opacity 1s linear;
 }
 
 .gallery {
@@ -103,6 +109,7 @@
 
 .image-gallery {
   margin-bottom: 50px;
+  margin-top: 50px;
 }
 
 $default-width: 50%;
@@ -155,4 +162,17 @@ html {
 .caption {
   position: static;
   color: #AAA;
+}
+
+.copyright {
+  border-top: 1px solid #677A95;
+  margin-top: 70px;
+  bottom: 20px;
+  width: 100%;
+  position: relative;
+
+  p {
+    margin-top: 20px;
+    color: #677A95;
+  }
 }
