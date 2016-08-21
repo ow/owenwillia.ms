@@ -45,6 +45,30 @@
   position: relative;
 }
 
+.position {
+  position: absolute;
+  top:0px;
+  width:100%;
+  height: 100%;
+  left:0;
+  z-index: 0;
+
+  .overlay {
+    background: linear-gradient(to bottom, rgba(41,47,51,0.2) 0%,rgba(41,47,51,1) 100%); /* W3C */
+     width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+  }
+
+  .bg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 0;
+  }
+}
+
 .meta {
   position: absolute;
   bottom: 30px;
@@ -110,6 +134,8 @@
 .image-gallery {
   margin-bottom: 50px;
   margin-top: 50px;
+  z-index: 1;
+  position: relative;
 }
 
 $default-width: 50%;

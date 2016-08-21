@@ -6,6 +6,7 @@ date: August 2016
 layout: gallery
 image: /photos/annecy/france004-1200x800.jpg
 gallery: "annecy"
+bg: /photos/annecy/bg.jpg
 ---
 
 In August I found myself transferring between two jobs, with a few weeks off, so Fem and I decided we'd take a little bit of a spontaneous trip to Annecy, France, to satisfy our cravings for being in the mountains again.

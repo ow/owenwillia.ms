@@ -2,7 +2,13 @@
 layout: photos
 support: [jquery, gallery]
 ---
-
+{% if page.bg %}
+<div class="position">
+<div class="overlay"></div>
+<div class="bg" style="background-image:url('{{page.bg}}');
+"></div>
+</div>
+{% endif %}
 <div class="col-lg-8 col-lg-offset-2">
   <div class="meta-box">
     <svg style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
