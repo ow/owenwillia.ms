@@ -5,6 +5,7 @@ function getTracks(){
   var items;
   $.getJSON( url, function( data ) {
     items = data.recenttracks;
+    console.log(items.track[1].date['#text']);
     nowListening = items.track[0].name + " by " + items.track[0].artist['#text'];
     url = items.track[0].url;
 

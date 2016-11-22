@@ -13,6 +13,10 @@ dl, dd, ol, ul, figure {
     padding: 0;
 }
 
+h2, a {
+    color: $brand;
+}
+
 .center {
     text-align: center;
 }
@@ -90,10 +94,6 @@ li {
  */
 h1, h2, h3, h4, h5, h6 {
     font-weight: $base-font-weight;
-}
-
-h2 {
-    color: #677A95;
 }
 
 h3 {

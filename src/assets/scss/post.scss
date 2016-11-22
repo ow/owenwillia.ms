@@ -1,7 +1,11 @@
 .post {
   h3 {
-    color: $blue;
+    color: $brand;
     margin-bottom: 5px;
+  }
+
+  h4 {
+    color: lighten( $brand, 10% );
   }
 
   .job {
