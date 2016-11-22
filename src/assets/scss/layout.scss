@@ -54,8 +54,9 @@
     a {
       color: $dark;
       &:hover {
-        color: white;
+        color: darken( $dark, 15% );
         transition:.2s;
+        text-decoration: none;
       }
     }
 
@@ -85,3 +86,21 @@
   width: 55%;
   float: right;
 }
+
+.lead-contain {
+  h1 {
+    color: white;
+
+      a {
+    color: white;
+
+    &:hover {
+      text-decoration: none;
+      color: darken( white, 5% );
+    }
+  }
+  }
+
+
+}
+

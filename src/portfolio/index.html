@@ -6,7 +6,8 @@ title: Portfolio | Owen Williams | Developer and Writer in Amsterdam
 <article class="post portfolio">
 
   <div class="col-lg-12">
-      {% for item in site.portfolio %}
+      {% assign items = site.portfolio | sort: 'date' %}
+      {% for item in items reversed %}
         <div class="item">
           <a href="{{item.link}}">
             <img class="lead-image" src="{{item.image}}">

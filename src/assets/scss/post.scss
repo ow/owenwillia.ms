@@ -14,6 +14,17 @@
 }
 
 .portfolio {
+
+    a {
+      &:hover {
+        h3 {
+          color: darken( $dark, 5% ) !important;
+        }
+        color: darken( $dark, 5% ) !important;
+        text-decoration: none;
+      }
+    }
+
   h3 {
     color: $brand;
   }
