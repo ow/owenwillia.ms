@@ -104,3 +104,30 @@
 
 }
 
+.nav ul, .footer-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      display: inline;
+      margin-right: 15px;
+    }
+}
+
+.site-footer {
+  display: none;
+  background: $brand;
+  margin-top: 30px;
+
+  .footer-links {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+
+    a {
+      color: #CC2B04;
+      text-transform: uppercase;
+    }
+  }
+}
