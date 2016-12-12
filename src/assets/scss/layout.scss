@@ -22,6 +22,12 @@
       margin-left: 0px;
     }
   }
+
+
+    li:after {
+      content: '/';
+      padding-left: 10px;
+    }
 }
 
 .profile {
