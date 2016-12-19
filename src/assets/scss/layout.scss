@@ -7,16 +7,16 @@
   a {
     margin-right: 0px;
     margin-left: 0px;
-    color: #CC2B04;
+    color: $brand;
 
     &:hover {
-      color: $brand;
+      color: lighten($brand, 10.5%);
       border-bottom: 2px solid $brand;
       text-decoration: none;
     }
 
     &:active {
-      color: #CE2900;
+      color: $brand;
     }
     &:first-child {
       margin-left: 0px;
@@ -31,6 +31,12 @@
     }
 
 
+}
+
+.photo-nav {
+  a {
+    color: white;
+  }
 }
 
 .nav ul li:last-child {
@@ -126,7 +132,7 @@
     padding: 0;
 
     li {
-      display: inline;
+      display: inline-block;
       margin-right: 15px;
     }
 }

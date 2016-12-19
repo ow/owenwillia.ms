@@ -21,7 +21,14 @@ $screen-md-max: ($screen-lg-min - 1);
     }
 
     ul li {
+      margin-bottom: 0px;
+    }
+  }
+
+  .site-footer {
+    ul li {
       margin-bottom: 20px;
+      margin-right: 30px;
     }
   }
 }
