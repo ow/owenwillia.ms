@@ -13,7 +13,7 @@ function getTracks(){
     nowListening = items.track[0].name + " by " + items.track[0].artist['#text'];
     url = items.track[0].url;
 
-    $( "#listen" ).html("🎶 Listened to <strong><a href='"+ url + "'>" + nowListening + "</a></strong> " + time);
+    $( "#listen" ).html("🎶  Listened to <i><a href='"+ url + "'>" + nowListening + "</a></i> – " + time);
     $( ".age").slideDown();
 
     return items;
