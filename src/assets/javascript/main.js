@@ -29,3 +29,20 @@ function shrink() {
     });
     $('.right-box').addClass('fullSize');
 }
+
+var age, daysBetweenDates;
+
+daysBetweenDates = function(d1, d2) {
+  var diffDays, oneDay;
+  oneDay = 24 * 60 * 60 * 1000;
+  diffDays = (d2 - Date.parse(d1)) / oneDay;
+  return diffDays;
+};
+
+age = function() {
+  theAge = daysBetweenDates('Jan 7, 1991 00:06:00', new Date()) / 365;
+  test = parseFloat(theAge).toFixed(9);
+  $('#myAge').text(test + " years old.");
+};
+
+setInterval(age, 25);
