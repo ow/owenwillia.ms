@@ -57,7 +57,7 @@
 
 .age {
   display: none;
-  max-width: 260px !important;
+  max-width: 360px !important;
 }
 
 .small {
@@ -95,6 +95,7 @@
       .lead-contain {
         border-left: 7px solid $faded;
         padding-left: 15px;
+        width: 360px;
       }
 
       h1 {

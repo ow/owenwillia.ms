@@ -5,11 +5,15 @@ function getTracks(){
   var items;
   $.getJSON( url, function( data ) {
     items = data.recenttracks;
-    console.log(items.track[1].date['#text']);
+    time = items.track[0].date['#text'];
+    time = moment().add('hours', -0.1);
+    console.log(time);
+    time = moment(time).fromNow();
+
     nowListening = items.track[0].name + " by " + items.track[0].artist['#text'];
     url = items.track[0].url;
 
-    $( "#listen" ).html("Just listened to: <br>🎵 <a href='"+ url + "'>" + nowListening + "</a>");
+    $( "#listen" ).html("🎶 Listened to <strong><a href='"+ url + "'>" + nowListening + "</a></strong> " + time);
     $( ".age").slideDown();
 
     return items;
