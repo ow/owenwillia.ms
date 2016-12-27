@@ -7,22 +7,21 @@ function getTracks(){
     items = data.recenttracks;
     console.log(time);
     var time = "right now"
-
+    /*
     if(time != "right now") {
     time = items.track[1].date['#text'];
-    time = moment().add('hours', -0.1);
 
     time = moment(time).fromNow();
-  }
+  }*/
     nowListening = items.track[0].name + " by " + items.track[0].artist['#text'];
     url = items.track[0].url;
-
+    /*
     if (time == "right now") {
        $( "#listen" ).html("Listening to <i><a href='"+ url + "'>" + nowListening + "</a></i> " + time);
     }
-    else {
-      $( "#listen" ).html("Listened to <i><a href='"+ url + "'>" + nowListening + "</a></i> " + time);
-    }
+    else {*/
+      $( "#listen" ).html("🎶 Just listened to <i><a href='"+ url + "'>" + nowListening + "</a></i> ");
+    //}
 
     $( ".age").slideDown();
 
@@ -43,20 +42,3 @@ function shrink() {
     });
     $('.right-box').addClass('fullSize');
 }
-
-var age, daysBetweenDates;
-
-daysBetweenDates = function(d1, d2) {
-  var diffDays, oneDay;
-  oneDay = 24 * 60 * 60 * 1000;
-  diffDays = (d2 - Date.parse(d1)) / oneDay;
-  return diffDays;
-};
-
-age = function() {
-  theAge = daysBetweenDates('Jan 7, 1991 00:06:00', new Date()) / 365;
-  test = parseFloat(theAge).toFixed(9);
-  $('#myAge').text(test + " years old.");
-};
-
-setInterval(age, 25);
