@@ -155,3 +155,15 @@
     }
   }
 }
+
+.home-btn {
+  border: 2px solid $brand;
+  color: $brand;
+  transition: .5s;
+  margin-bottom: 40px;
+
+  &:hover {
+    background: #0B486B;
+    color: white;
+  }
+}
