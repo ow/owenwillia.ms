@@ -168,8 +168,24 @@
   margin-bottom: 40px;
 
   &:hover {
-    background: #0B486B;
+    background: #0B476B;
     color: white;
+  }
+}
+
+.status {
+  margin-top: 30px;
+  margin-bottom: 5px;
+}
+
+.home-btn.inverted {
+  border: 2px solid white;
+  color: white;
+  text-transform: uppercase;
+
+  &:hover{
+    background: white;
+    color: #0B476B;
   }
 }
 
