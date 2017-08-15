@@ -1,0 +1,8 @@
+#You need sudo to run this!
+xcode-select --install
+sudo easy_install pip
+sudo pip install macfsevents
+sudo curl https://db5iu3k4j1efi.cloudfront.net/unison-fsmonitor-IKzJ1fQDsA. > /usr/local/bin/unison-fsmonitor && chmod 775 /usr/local/bin/unison-fsmonitor
+touch sync.sh
+echo unison -repeat watch `pwd`/data/web/magento2 ssh://root@127.0.0.1//home/cloudpanel/htdocs/magento2 -ui text
+docker run -d --net=bridge --restart=always --privileged -h mgt-dev-70 --name mgt-dev-70 -it -p 80:80 -p 443:443 -p 22:22 -p 3306:3306 -p 3333:3333 mgtcommerce/mgt-development-environment-7.0

@@ -1,8 +1,13 @@
 .nav {
-  padding-top: 40px;
+  //padding-top: 40px;
   margin-bottom: 60px;
-  position: relative;
+  //position: relative;
+  padding-top: 20px;
+  margin-bottom: 60px;
+  position: fixed;
   z-index: 1;
+  background: white;
+  padding-bottom: 20px;
 
   a {
     margin-right: 0px;
@@ -166,4 +171,8 @@
     background: #0B486B;
     color: white;
   }
+}
+
+.content {
+  padding-top: 40px;
 }
