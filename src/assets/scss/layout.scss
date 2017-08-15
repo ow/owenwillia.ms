@@ -1,18 +1,16 @@
+
+
 .nav {
-  //padding-top: 40px;
+  padding-top: 40px;
   margin-bottom: 60px;
-  //position: relative;
-  padding-top: 20px;
-  margin-bottom: 60px;
-  position: fixed;
+  position: relative;
   z-index: 1;
-  background: white;
-  padding-bottom: 20px;
 
   a {
     margin-right: 0px;
     margin-left: 0px;
     color: $brand;
+    border-bottom: 0px solid transparent !important;
 
     &:hover {
       color: lighten($brand, 10.5%);
@@ -35,6 +33,19 @@
       padding-right: 5px;
     }
 
+
+}
+
+.pages {
+  .nav {
+    margin-bottom: 60px;
+    padding-top: 20px;
+    margin-bottom: 60px;
+    position: fixed;
+    z-index: 1;
+    background: white;
+    padding-bottom: 20px;
+  }
 
 }
 
@@ -189,6 +200,16 @@
   }
 }
 
-.content {
-  padding-top: 40px;
+.home {
+  padding-top: 66px;
+}
+
+.pages {
+  a {
+    border-bottom: 1.5px solid #0B476B;
+    padding-bottom: 1.5px;
+    &:hover {
+      text-decoration: none;
+    }
+  }
 }
